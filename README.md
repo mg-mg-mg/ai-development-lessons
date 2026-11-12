@@ -43,6 +43,6 @@ These are intended readers, not measured audience data. Adapt the practices to y
 
 ## License
 
-Material in this candidate that the rights holder has authority to license is available under [Creative Commons Attribution 4.0 International (CC BY 4.0)](LICENSE). This license does not grant trademark or patent rights.
+Material in this guide that the rights holder has authority to license is available under [Creative Commons Attribution 4.0 International (CC BY 4.0)](LICENSE). This license does not grant trademark or patent rights.
 
 Some diagram content may be derived from third-party material under the MIT License; its copyright and permission notice is in [third-party notices](THIRD_PARTY_NOTICES.md). CC BY 4.0 does not replace those third-party terms or grant rights the licensor does not hold.
