@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Root and subagent communication</title>
+<style>
+body { margin: 0; background: #f5f5f5; color: #2d3142; font-family: system-ui, sans-serif; }
+main { max-width: 960px; margin: 0 auto; }
+.diagram-container { width: 100%; overflow-x: auto; }
+svg { display: block; width: 100%; min-width: 960px; }
+@media print { .diagram-container { overflow-x: visible; } svg { min-width: 0; } }
+</style>
+</head>
+<body><main><div class="diagram-container">
+<svg viewBox="0 0 960 600" role="img" aria-labelledby="communication-title communication-desc" xmlns="http://www.w3.org/2000/svg">
+<title id="communication-title">Root and subagent communication</title>
+<desc id="communication-desc">The root gives a scoped request to a subagent, the subagent returns a result, and the root decides how to proceed.</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 Z" fill="#4f5d75"/></marker></defs>
+<rect width="960" height="600" fill="#f5f5f5"/>
+<text x="40" y="76" fill="#4f5d75" font-family="system-ui, sans-serif" font-size="12" letter-spacing="2">A CLEAR HANDOFF</text>
+<text x="40" y="124" fill="#2d3142" font-family="Georgia, serif" font-size="36">Request, result, decision</text>
+<g fill="none" stroke="#4f5d75" stroke-width="1.5">
+<path d="M252 236 V476" stroke-dasharray="4 5"/><path d="M708 236 V476" stroke-dasharray="4 5"/>
+<path d="M252 296 H708" marker-end="url(#arrow)"/><path d="M708 384 H252" stroke-dasharray="6 5" marker-end="url(#arrow)"/>
+</g>
+<rect x="164" y="168" width="176" height="68" rx="6" fill="#f9ebe6" stroke="#bf4520" stroke-width="1.5"/>
+<rect x="620" y="168" width="176" height="68" rx="6" fill="#fff" stroke="#4f5d75"/>
+<g fill="#2d3142" font-family="system-ui, sans-serif" text-anchor="middle" font-size="16" font-weight="600">
+<text x="252" y="209">Root agent</text><text x="708" y="209">Subagent</text>
+</g>
+<rect x="342" y="256" width="276" height="24" fill="#f5f5f5"/>
+<text x="480" y="273" text-anchor="middle" fill="#2d3142" font-family="system-ui, sans-serif" font-size="14">Request: scope and expected outcome</text>
+<rect x="354" y="344" width="252" height="24" fill="#f5f5f5"/>
+<text x="480" y="361" text-anchor="middle" fill="#2d3142" font-family="system-ui, sans-serif" font-size="14">Result: work and relevant limits</text>
+<rect x="164" y="456" width="280" height="64" rx="6" fill="#f9ebe6" stroke="#bf4520" stroke-width="1.5"/>
+<text x="184" y="483" fill="#bf4520" font-family="system-ui, sans-serif" font-size="12" font-weight="600">DECISION BOUNDARY</text>
+<text x="184" y="504" fill="#2d3142" font-family="system-ui, sans-serif" font-size="14">Root decides how to proceed.</text>
+</svg>
+</div></main></body></html>
